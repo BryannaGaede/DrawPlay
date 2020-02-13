@@ -29,6 +29,13 @@ public class Cat {
 		// Draw the head
 		g2.setColor(Color.black);
 		g2.fillOval(x, y, HEAD_DIMENSION, HEAD_DIMENSION);
+		//Draw Whites of eyes
+		g2.setColor(Color.white);
+		x = catX + EYE_X; 
+		y = catY + EYE_Y;
+		g2.fillOval(x, y, EYE_WIDTH+1, EYE_HEIGHT+1);
+		x += EYE_SEPARATION;
+		g2.fillOval(x, y, EYE_WIDTH+1, EYE_HEIGHT+1);
 		// Draw the eyes
 		g2.setColor(Color.blue);
 		x = catX + EYE_X; 
